@@ -54,7 +54,7 @@ const ProjectModal = ({ project, onClose }) => {
               <div key={index} className="project-modal-image-wrapper">
                 <img
                   src={image}
-                  alt={`${project.title} - Image ${index + 1}`}
+                  alt={`${project.title} - ${index + 1}`}
                   className="project-modal-image"
                   loading="lazy"
                 />
