@@ -52,6 +52,7 @@ const ProjectModal = ({ project, onClose }) => {
           <div className="project-modal-images" ref={imagesRef}>
             {images.map((image, index) => (
               <div key={index} className="project-modal-image-wrapper">
+                {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
                 <img
                   src={image}
                   alt={`${project.title} - ${index + 1}`}
