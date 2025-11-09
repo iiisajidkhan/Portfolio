@@ -1,0 +1,274 @@
+.project-image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-pattern {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.project-title-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* Apple Store Pattern */
+.project-pattern.apple .mockup-phone {
+  width: 80px;
+  height: 140px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin: 0 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.project-pattern.apple .mockup-phone::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* Web Splash Pattern */
+.project-pattern.websplash .mockup-form {
+  width: 300px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.project-pattern.websplash .form-field {
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.project-pattern.websplash .form-button {
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* Stark Pattern */
+.project-pattern.stark .mockup-card {
+  width: 200px;
+  height: 100px;
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  border-radius: 4px;
+  margin: 0.5rem;
+}
+
+/* Xtem Pattern */
+.project-pattern.xtem .mockup-wallet {
+  width: 120px;
+  height: 80px;
+  background: rgba(0, 102, 255, 0.2);
+  border-radius: 8px;
+  border: 2px solid rgba(0, 102, 255, 0.4);
+}
+
+.project-pattern.xtem .mockup-chart {
+  width: 200px;
+  height: 60px;
+  background: rgba(0, 102, 255, 0.1);
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+/* Plantmi Pattern */
+.project-pattern.plantmi .mockup-flower {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ff69b4 0%, #ff1493 100%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2rem;
+  opacity: 0.8;
+}
+
+.project-pattern.plantmi .mockup-text-large {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Dashboard Pattern */
+.project-pattern.dashboard .mockup-sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background: rgba(0, 102, 255, 0.1);
+  border-right: 1px solid rgba(0, 102, 255, 0.2);
+}
+
+.project-pattern.dashboard .mockup-chart-area {
+  width: 200px;
+  height: 100px;
+  background: rgba(0, 102, 255, 0.1);
+  border-radius: 4px;
+  margin: 1rem;
+}
+
+.project-pattern.dashboard .mockup-stats {
+  width: 150px;
+  height: 60px;
+  background: rgba(0, 102, 255, 0.1);
+  border-radius: 4px;
+  margin: 0.5rem;
+}
+
+/* Book Pattern */
+.project-pattern.book .mockup-book {
+  width: 60px;
+  height: 90px;
+  background: rgba(51, 51, 51, 0.2);
+  border-radius: 2px;
+  margin: 0 5px;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+/* E-Commerce Pattern */
+.project-pattern.ecommerce .mockup-product {
+  width: 100px;
+  height: 120px;
+  background: rgba(255, 102, 0, 0.1);
+  border-radius: 4px;
+  margin: 0 5px;
+  border: 1px solid rgba(255, 102, 0, 0.2);
+}
+
+/* Banking Pattern */
+.project-pattern.banking .mockup-card-visual {
+  width: 200px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-pattern.banking .mockup-balance {
+  width: 150px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+/* Fitness Pattern */
+.project-pattern.fitness .mockup-ring {
+  width: 120px;
+  height: 120px;
+  border: 8px solid rgba(0, 255, 136, 0.3);
+  border-top-color: rgba(0, 255, 136, 0.8);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.project-pattern.fitness .mockup-stats-grid {
+  width: 200px;
+  height: 80px;
+  background: rgba(0, 255, 136, 0.1);
+  border-radius: 4px;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.project-pattern.fitness .mockup-stats-grid::before,
+.project-pattern.fitness .mockup-stats-grid::after {
+  content: '';
+  background: rgba(0, 255, 136, 0.2);
+  border-radius: 2px;
+}
+
+/* Music Pattern */
+.project-pattern.music .mockup-album {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 0, 102, 0.2);
+  border-radius: 8px;
+  margin: 0 5px;
+  border: 1px solid rgba(255, 0, 102, 0.4);
+}
+
+/* Travel Pattern */
+.project-pattern.travel .mockup-map {
+  width: 250px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  position: relative;
+}
+
+.project-pattern.travel .mockup-map::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  top: 30%;
+  left: 40%;
+}
+
+.project-pattern.travel .mockup-booking-card {
+  width: 200px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+/* General mockup elements */
+.mockup-elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
